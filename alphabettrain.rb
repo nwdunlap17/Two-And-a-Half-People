@@ -28,7 +28,7 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
     end
 
     endval = (endval+highest)%26
-    print alphabet[endval]
+    puts alphabet[endval]
 end
 
 # File.open("test.txt").each do |line|
