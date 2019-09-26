@@ -2,10 +2,12 @@ def ducktyping (lines)
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     current_value = 0
 
+
+        current_value = 0
+
     lines.each do |line|
         line.chomp
         quacks = line.split(' ')
-        current_value = 0
 
         quacks.each do |quack|
             if quack == 'qwuack'
@@ -17,6 +19,8 @@ def ducktyping (lines)
             if quack == 'quack'
                 current_value -= 1
             end
+            # p quack
+            # p current_value
         end
     end
 end
