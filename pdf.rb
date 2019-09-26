@@ -17,7 +17,8 @@ end
 
 fillIns = {}
 story = []
-File.open("test.txt").each do |line|
+lines = ARGF.read.split("\n")
+lines.each do |line|
     if line.include? '='
         splits = line.split('=')
         fillIns[splits[0]] = splits[1].chomp
@@ -25,6 +26,7 @@ File.open("test.txt").each do |line|
         story << line
     end
 end
+
 
 # pdf(input)
 pdf(fillIns,story)

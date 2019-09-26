@@ -9,8 +9,11 @@ end
 
 
 input = []
-File.open("test.txt").each do |line|
+
+lines = ARGF.read.split("\n")
+lines.each do |line|
     input << line.chomp
 end
+
 
 knockknock(input)

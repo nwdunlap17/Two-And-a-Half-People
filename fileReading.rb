@@ -4,5 +4,7 @@
 #     puts probspell(line)
 # end
 
+lines = ARGF.read.split("\n")
+lines.each do |line|
 
-p 'abcde'[0...-1]
+end
