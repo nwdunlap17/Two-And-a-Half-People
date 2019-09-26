@@ -1,0 +1,4 @@
+verb=hit
+noun=gold
+I %verb% a %noun%
+Then I %noun% a %verb%.
