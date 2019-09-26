@@ -26,7 +26,13 @@ def canAmerica(array)
 end 
 
 array = []
-File.open("test.txt").each do |line|
+# File.open("test.txt").each do |line|
+#     array << line.chomp
+# end
+
+lines = ARGF.read.split("\n")
+lines.each do |line|
     array << line.chomp
 end
+
     canAmerica(array)
